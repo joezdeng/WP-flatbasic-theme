@@ -1,0 +1,403 @@
+/*   
+Theme Name: FlatBasic Theme
+Theme URI:
+Description: This is just a basic flat design Wordpress Theme template -- WordPress v2.9.1
+Author: Joe Deng
+Author URI:
+Version: 1
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 14px Helvetica, Sans-Serif;
+	display:block;
+	background-color:#E9E9E9;
+	
+} 
+
+#pageWrap {
+	width: 800px;
+	background-color:;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header {
+	margin-bottom:25px;
+}
+
+#header-img {
+	width:100%;
+	height:auto;
+}
+
+#menuBar {
+	float:left;
+	position:relative;
+	top: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* LEVEL ONE */
+ul.menuBar {
+	position: relative;
+	top:-55px;
+	
+}
+
+ul.menuBar li {
+	height:56px;
+	line-height:56px;
+	font-weight: bold;
+	float: left;
+	zoom: 1;
+	background: #646464;
+	padding: 0px 14px;
+	cursor:pointer;
+	color:#FFF;
+	z-index:20;
+}
+
+ul.menuBar a:active {
+	color: #ffa500;
+}
+
+ul.menuBar li a, ul.menuBar li .submenu li a {
+	color:#FFF;
+}
+/*	display: block;
+	padding: 4px 8px;
+	border-right: 1px solid #333;
+	color: #222;
+}*/
+
+ul.menuBar li:last-child a {
+	border-right: none;
+} /* Doesn't work in IE */
+
+ul.menuBar li.hover, ul.menuBar li:hover {
+	background: #B19CD9;
+	color: #FFF;
+	position: relative;
+}
+
+
+/* LEVEL TWO */
+ul.menuBar ul {
+	width: 200px;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+ul.menuBar ul li {
+	font-weight: bold;
+	background: #999;
+	color: #FFF;
+	border-top: 1px solid #FFF;
+	float: none;
+}
+
+/* IE 6 & 7 Needs Inline Block */
+ul.menuBar ul li a {
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+}
+
+#search {
+	float:left;
+	height:56px;
+	line-height:56px;
+	background:#646464;
+	position:relative;
+	top:-5px;
+	padding-left: 16px;
+	padding-right: 7px;
+	
+}
+
+#searchText {
+ 	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}	
+
+#pageTitle {
+	font-size:16px;
+	color:#FFF;
+}
+
+#searchBox {
+	width:auto;
+}
+
+#content-wrap {
+	background-color:#B5B5B5;
+	float:left;
+	position:relative;
+	top:20px;
+	width:800px;
+	height:auto;
+}
+
+#mainColumn {
+	float:left;
+}
+
+.mainContainer {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	width: 500px;
+	height: auto;
+	padding: 2px;
+	padding-bottom:10px;
+}
+
+.bannerTitle {
+	font: 14px Helvetica, Sans-Serif;
+	background-color: #646464;
+	color: #FFF;
+	width: 87px;
+	height: 18px;
+	text-align: right;
+	padding-right: 6px;
+	position: relative;
+	left: 408px;
+	top: -1px;
+	
+}
+
+.postTitle {
+	font: 20px Helvetica, Sans-Serif;
+}
+
+.Excerpt {
+	font: 10px Helvetica, Sans-Serif;
+	position:relative;
+	color: #003;
+}
+
+#rightSidebar {
+	float:left;
+}
+
+.rightContainer {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	width: 238px;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+#countDownTitle {
+	font: 22px Helvetica, Sans-Serif;
+	text-align:center;
+	padding:4px;
+}
+
+#countDownTo {
+	font: 14px Helvetica, Sans-Serif;
+	width:135px;
+	position:relative;
+	left:46px;
+	background:#646464;
+	padding:20px 5px;
+}
+
+#countDownLoc {
+	font: 18px Helvetica, Sans-Serif;
+	color:#FFF;
+	text-align:center;
+	
+}
+
+#countDownDate {
+	font: 14px Helvetica, Sans-Serif;
+	color:#FFF;
+	text-align:center;
+}
+
+#timer {
+	position:relative;
+	left:46px;
+}
+
+#followUs {
+	font:22px Helvetica, Sans-Serif;
+	padding:5px 20px;
+	color:#FFF;
+	background:#646464;
+	width:225px;
+	position:relative;
+	left:10px
+}
+
+#facebook, #twitter {
+	position:relative;
+	left:132px;
+	top:-56px;
+	padding-bottom:10px;
+}
+
+#footer {
+	background: #646464;
+	float:left;
+	width:800px;
+	height:100px;
+	text-align:left;
+	color:#FFF;
+}
+
+#contactInfo {
+	padding:30px 15px;
+	font:14px Helvetica, Sans-Serif;
+}
+
+/* .staticContainer {
+	margin: 10px;
+	margin-right: 10px;
+	width: 505px;
+	height: auto;
+	padding: 2px;
+	padding-bottom:10px;
+} 
+
+.staticTitle {
+	font:28px Helvetica, Sans-Serif;
+	color:#FFF;
+	position:relative;
+	left:15px;
+	top:20px;
+
+}
+
+.staticExcerpt {
+	color: #FFF;
+	font:14px Helvetica, Sans-Serif;
+	position:relative;
+	left:15px;
+	top:25px;
+	padding-right:50px;
+}
+
+.staticExcerpt a {
+	text-decoration:none;
+	color:#8080C0;
+}
+
+.sponsorLogo {
+	float:left;
+	padding-right:3px;
+	padding-top:3px;
+}
+
+#logoContainer {
+	height:175px;
+	position:relative;
+	top:30px;
+	padding-left:15px;
+}
+*/
+
+.nav {
+	font:14px Helvetica, Sans-serif;
+	color:#FFF;
+}
+
+.nav p a {
+	text-decoration:none;
+	color:#FFF;
+}
+
+
+.tableContainer {
+	color:#FFF;
+	font:Helvetica, Sans-serif;
+	position:relative;
+	left:15px;
+	top:25px;
+	padding-right:50px;
+}
+
+th {
+	text-align:left;
+	padding-top:30px;
+	padding-bottom:10px;
+	font-size:22px;
+}
+
+td {
+	padding-top:2px;
+	padding-right:20px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+td a {
+	text-decoration:none;
+	color:#8080C0;
+}
+
+.clearText {
+	height:75px;
+	position:relative;
+}
+
+.commentsContainer {
+	margin:10px;
+}
+
+.commentsContainer .commentlist li {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px 0px;
+	width: 500px;
+	height: auto;
+	padding: 2px;
+	padding-bottom:10px;
+	list-style:none;
+}
+
+#archivesContainer {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	margin-top: -50px;
+	width: 238px;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+#archivesTitle {
+	font:20px Helvetica, Sans-Serif;
+	padding:6px;
+}
+
+#archivesList {
+	padding-left: 8px;
+	padding-bottom:6px;
+	list-style:none;
+}
+
+.pagetitle {
+	padding:6px;
+	width:518px;
+}
